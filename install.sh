@@ -24,6 +24,8 @@ cp ./etc/apt/sources.list.d/garden.list /rootfs/etc/apt/sources.list.d/
 cp ./usr/share/keyrings/garden.gpg /rootfs/usr/share/keyrings/garden.gpg
 cp -r ./usr/lib/droid-vendor-overlay/ /rootfs/usr/lib/
 cp -r ./usr/bin/ /rootfs/usr/
+cp ./usr/share/applications/* /rootfs/usr/share/applications/
+cp ./usr/share/icons/* /rootfs/usr/share/applications/
 mkdir -p /rootfs/var/lib/bluetooth/
 cp ./var/lib/bluetooth/board-address /rootfs/var/lib/bluetooth/
 mkdir -p /rootfs/lib/systemd/system/bluebinder.service.d/
