@@ -1,7 +1,5 @@
-#!/bin/sh
-mount /data/rootfs.img /mnt/
+#!/sbin/sh
 mknod /dev/loop1 b 7 8
-losetup -d /dev/loop1
 losetup /dev/loop1 /data/rootfs.img
 mkdir /rootfs && mount /dev/loop1 /rootfs
 mkdir -p /rootfs/etc/systemd/system/android-mount.service.d/
