@@ -12,7 +12,7 @@ cp ./etc/systemd/system/ssh-fix.service /rootfs/etc/systemd/system/
 cp ./etc/systemd/system/vendor-overlay.service /rootfs/etc/systemd/system/
 cp ./etc/systemd/system/apt-fix.service /rootfs/etc/systemd/system/
 mkdir -p /rootfs/etc/systemd/user/pulseaudio.service.d/
-cp ./etc/systemd/system/pulseaudio.service.d/* /rootfs/etc/systemd/user/pulseaudio.service.d/
+cp ./etc/systemd/user/pulseaudio.service.d/* /rootfs/etc/systemd/user/pulseaudio.service.d/
 cp ./etc/udev/rules.d/70-garden.rules /rootfs/etc/udev/rules.d/
 cp ./etc/pulse/arm_droid_card_custom.pa /rootfs/etc/pulse/
 cp ./etc/ofono/main.conf /rootfs/etc/ofono/
