@@ -27,6 +27,7 @@ cp ./usr/share/applications/* /rootfs/usr/share/applications/
 cp ./usr/share/icons/* /rootfs/usr/share/applications/
 mkdir -p /rootfs/var/lib/bluetooth/
 cp ./var/lib/bluetooth/board-address /rootfs/var/lib/bluetooth/
+cp -r ./var/lib/batman /rootfs/var/lib/batman
 mkdir -p /rootfs/lib/systemd/system/bluebinder.service.d/
 cp ./lib/systemd/system/bluebinder.service.d/* /rootfs/lib/systemd/system/bluebinder.service.d/
 mkdir -p /rootfs/lib/systemd/system/systemd-modules-load.service.d/
