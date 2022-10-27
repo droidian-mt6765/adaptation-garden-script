@@ -11,6 +11,7 @@ cp ./etc/systemd/system/modules.service /rootfs/etc/systemd/system/
 cp ./etc/systemd/system/ssh-fix.service /rootfs/etc/systemd/system/
 cp ./etc/systemd/system/vendor-overlay.service /rootfs/etc/systemd/system/
 cp ./etc/systemd/system/apt-fix.service /rootfs/etc/systemd/system/
+cp ./etc/systemd/system/batman.service /rootfs/etc/systemd/system/
 mkdir -p /rootfs/etc/systemd/user/pulseaudio.service.d/
 cp ./etc/systemd/user/pulseaudio.service.d/* /rootfs/etc/systemd/user/pulseaudio.service.d/
 cp ./etc/udev/rules.d/70-garden.rules /rootfs/etc/udev/rules.d/
@@ -30,5 +31,5 @@ mkdir -p /rootfs/lib/systemd/system/bluebinder.service.d/
 cp ./lib/systemd/system/bluebinder.service.d/* /rootfs/lib/systemd/system/bluebinder.service.d/
 mkdir -p /rootfs/lib/systemd/system/systemd-modules-load.service.d/
 cp ./lib/systemd/system/systemd-modules-load.service.d/* /rootfs/lib/systemd/system/systemd-modules-load.service.d/
-chroot /rootfs/ /bin/bash -c 'export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin" && systemctl enable brightness ssh-fix modules vendor-overlay apt-fix'
+chroot /rootfs/ /bin/bash -c 'export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin" && systemctl enable brightness ssh-fix modules vendor-overlay apt-fix batman'
 echo "Now just reboot"
