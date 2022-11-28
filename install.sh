@@ -20,7 +20,9 @@ cp ./etc/ofono/main.conf /rootfs/etc/ofono/
 cp -r ./etc/phosh /rootfs/etc/
 cp ./etc/modules-load.d/* /rootfs/etc/modules-load.d/
 cp ./etc/apt/sources.list.d/garden.list /rootfs/etc/apt/sources.list.d/
-cp ./usr/share/keyrings/garden.gpg /rootfs/usr/share/keyrings/garden.gpg
+cp ./etc/apt/sources.list.d/batman.list /rootfs/etc/apt/sources.list.d/
+cp ./usr/share/keyrings/garden.gpg /rootfs/usr/share/keyrings/
+cp ./usr/share/keyrings/fakeshell.gpg /rootfs/usr/share/keyrings/
 cp -r ./usr/lib/droid-vendor-overlay/ /rootfs/usr/lib/
 cp -r ./usr/bin/ /rootfs/usr/
 cp ./usr/share/applications/* /rootfs/usr/share/applications/
