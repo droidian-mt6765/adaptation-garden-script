@@ -26,7 +26,7 @@ cp ./usr/share/keyrings/fakeshell.gpg /rootfs/usr/share/keyrings/
 cp -r ./usr/lib/droid-vendor-overlay/ /rootfs/usr/lib/
 cp -r ./usr/bin/ /rootfs/usr/
 cp ./usr/share/applications/* /rootfs/usr/share/applications/
-cp ./usr/share/icons/* /rootfs/usr/share/applications/
+cp ./usr/share/icons/* /rootfs/usr/share/icons/
 mkdir -p /rootfs/var/lib/bluetooth/
 cp ./var/lib/bluetooth/board-address /rootfs/var/lib/bluetooth/
 cp -r ./var/lib/batman /rootfs/var/lib/batman
