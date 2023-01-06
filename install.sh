@@ -36,3 +36,5 @@ mkdir -p /rootfs/lib/systemd/system/systemd-modules-load.service.d/
 cp -r ./lib/systemd/system/systemd-modules-load.service.d/* /rootfs/lib/systemd/system/systemd-modules-load.service.d/
 chroot /rootfs/ /bin/bash -c 'export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin" && systemctl enable brightness ssh-fix modules vendor-overlay apt-fix batman'
 echo "Now just reboot"
+echo "After rebooting run: sudo apt update && sudo apt upgrade -y && sudo apt install droidian-sysfs-torch -y"
+echo "to get flashlight working"
